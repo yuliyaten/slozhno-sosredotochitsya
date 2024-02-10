@@ -133,16 +133,8 @@
     display: grid;
   }
 
-  .what_section-desktop {
-    gap: 20px;
-  }
-
   .section_heading {
     width: 315px;
-  }
-
-  .decorated_name {
-    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   }
 
   section {
@@ -159,6 +151,7 @@
   .what_section-desktop {
     display: flex;
     flex-direction: column;
+    gap: 20px;
   }
 
   .content_box-desktop {

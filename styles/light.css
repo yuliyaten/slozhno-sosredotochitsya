@@ -109,6 +109,7 @@
 }
 
 .header__theme-menu-button:focus-visible {
+  outline: none;
   text-decoration: underline;
 }
 
@@ -120,9 +121,4 @@ a:focus-visible {
 a:hover {
   text-decoration: underline;
   color: var(--standard-color, #353430);
-}
-
-.header__theme-menu-button:focus-visible {
-  outline: none;
-  text-decoration: underline;
 }

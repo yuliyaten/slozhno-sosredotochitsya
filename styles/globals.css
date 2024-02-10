@@ -7,16 +7,10 @@
 }
 
 body {
-<<<<<<< HEAD
   margin: 0px;
   padding: 0px;
   min-inline-size: 375px;
   max-inline-size: 1440px;
-=======
-  min-inline-size: 375px;
-  max-inline-size: 1440px;
-  margin: 0 auto;
->>>>>>> ee53502d1874a5c0c68c17c3fd6e10a84edb0a42
 }
 
 h1,

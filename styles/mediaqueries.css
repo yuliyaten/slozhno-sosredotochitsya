@@ -1,0 +1,204 @@
+/*mediaquerie for 768px*/
+
+@media (min-width: 768px) {
+  .page {
+    padding: 20px;
+  }
+
+  .decorated_name-pad {
+    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+    margin-left: -20px;
+  }
+
+  .title-decor_box {
+    display: flex;
+    padding-left: 364px;
+  }
+
+  .header {
+    margin-block-end: 60px;
+  }
+
+  .content {
+    gap: 80px;
+  }
+
+  section {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+  }
+
+  .what_section {
+    display: flex;
+  }
+
+  .section_heading {
+    width: 236px;
+  }
+
+  .decorated_name {
+    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+  }
+
+  .pictures {
+    gap: 20px;
+  }
+
+  .images-box {
+    display: grid;
+    grid-template-columns: fit-content fit-content fit-content;
+    grid-template-rows: fit-content fit-content fit-content;
+    gap: 20px;
+  }
+
+  .sunset-image-box {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+
+  .icecream-image-box {
+    grid-column-start: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+  }
+
+  .sunset {
+    height: 192px;
+  }
+
+  .icecream {
+    width: 229px;
+    height: 441px;
+  }
+
+  .tape-image-box {
+    grid-row-start: 2;
+    grid-row-end: 4;
+  }
+
+  .tape {
+    width: 229px;
+    height: 568px;
+  }
+
+  .books {
+    width: 230px;
+    height: 230px;
+  }
+
+  .street {
+    width: 479px;
+    height: 318px;
+  }
+
+  .street-image-box {
+    grid-column-start: 2;
+    grid-column-end: 4;
+  }
+
+  img {
+    object-fit: cover;
+  }
+
+  .footer {
+    margin-block-start: 60px;
+  }
+}
+
+/*mediaquerie for 1024px*/
+
+@media (min-width: 1024px) {
+  .header__theme-menu {
+    display: flex;
+    justify-content: center;
+    align-self: flex-start;
+    flex-direction: row;
+  }
+
+  .header__theme-menu-list {
+    display: flex;
+    align-items: flex-start;
+  }
+
+  .decorated_name {
+    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+  }
+
+  .title-decor_box {
+    display: flex;
+    padding-left: 493px;
+  }
+
+  .what_section {
+    display: grid;
+  }
+
+  .what_section-desktop {
+    gap: 20px;
+  }
+
+  .section_heading {
+    width: 315px;
+  }
+
+  .decorated_name {
+    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+  }
+
+  section {
+    gap: 20px;
+  }
+
+  .content_box-why {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    min-width: 649px;
+  }
+
+  .what_section-desktop {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .content_box-desktop {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .content_definition-desktop {
+    min-width: 315px;
+  }
+
+  .content_box-how {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    min-width: 649px;
+  }
+
+  .sunset {
+    height: 260px;
+  }
+
+  .icecream {
+    width: 315px;
+    height: 595px;
+  }
+
+  .tape {
+    width: 315px;
+    height: 768px;
+  }
+
+  .books {
+    width: 315px;
+    height: 315px;
+  }
+
+  .street {
+    width: 649px;
+    height: 428px;
+  }
+}

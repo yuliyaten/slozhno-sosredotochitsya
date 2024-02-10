@@ -1,5 +1,260 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
+* {
+  box-sizing: border-box;
+}
+
 .page {
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
+  font-family: var(--main-font, sans-serif);
+  background-color: var(--standard-color, #000028);
+  color: var(--accent-color, #FF0070);
+  background-image: url(../images/cover-image-dark.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  display: grid;
+  padding: 10px;
 }
+
+.header {
+  position: relative;
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 1fr min-content 1fr;
+  margin-block-end: 40px;
+}
+
+.header_decorated-item {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--accent-color, #FF0070);
+  height: 26px;
+  right: 10px;
+}
+
+.header_decorated-item::after {
+  content: '';
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background-color: var(--accent-color, #FF0070);
+  box-shadow: 0px 0px 4px 2px var(--accent-color, #FF0070);
+}
+
+.header__theme-menu {
+  align-self: center;
+  height: 98px;
+}
+
+.header__theme-menu-list {
+  display: grid;
+  align-items: center;
+  color: var(--accent-color, #FF0070);
+  gap: 13px;
+  text-transform: lowercase;
+  float: right;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%;
+}
+
+.header__theme-menu-button {
+  text-transform: lowercase;
+  background-color: transparent;
+  border: none;
+  display: inline-flex;
+  height: 26px;
+  width: 70px;
+  padding: 0px 13px;
+  justify-content: center;
+  align-items: center;
+}
+
+.header__theme-menu-button:hover {
+  display: inline-flex;
+  padding: 0px 25px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.header__theme-menu-button_type_dark:active {
+  outline: 1px solid #FF0070;
+}
+
+.header__theme-menu-button:focus-visible {
+  outline: none;
+  text-decoration: underline;
+}
+
+.corner-border::after { 
+  content: '';
+  position: absolute;
+  color: var(--accent-color, #FF0070);
+  border-width: 1px 1px 0px 0px;
+  border-style: solid;
+  height: 25px;
+  width: 25px;
+  right: 0px;
+}
+
+.corner-border::before { 
+  content: '';
+  position: absolute;
+  color: var(--accent-color, #FF0070);
+  border-width: 0px 0px 1px 1px;
+  border-style: solid;
+  height: 25px;
+  width: 25px;
+  bottom: 0px;
+}
+
+.decorated_name {
+  color: var(--header-footer-color);
+  font-style: var(--header-footer-font-style);
+  font-weight: bold;
+  line-height: var(--header-footer-line-height);
+  text-shadow: 4px 4px 0 var(--accent-color, #FF0070);
+  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+}
+
+.title-decor_box {
+  display: flex;
+  align-items: center;
+}
+
+.title-decor {
+  color: var(--standard-color);
+  background-color: var(--accent-color);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 23.4px;
+}
+
+.content {
+  display: grid;
+  gap: 50px;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.content_box {
+  display: grid;
+  gap: 20px;
+}
+
+.content_definition {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.content_text-title {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.content_text {
+  color: #F1B2CE;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 23.4px;
+}
+
+a {
+  text-shadow: 2px 2px 0 var(--accent-color, #FF0070);
+  outline: none;
+  text-decoration: none;
+}
+
+a:focus {
+  outline: 1px solid #F1B2CE;
+  text-align: center;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #F1B2CE;
+}
+
+.header__theme-menu-button_active {
+  pointer-events: none;
+}
+
+.section_heading {
+  color: var(--accent-color, #FF0070);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 23.4px;
+}
+
+.pictures {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.images-box {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.images-box img {
+  display: grid;
+  width: 100%;
+}
+
+.footer {
+  text-shadow: 2px 2px 0 var(--accent-color, #FF0070);
+  height: 100vh;
+  margin-block-start: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.footer_name::after {
+  content: '';
+  position: absolute;
+  color: var(--accent-color, #FF0070);
+  border-width: 1px 1px 0px 0px;
+  border-style: solid;
+  height: 25px;
+  width: 25px;
+  right: 0px;
+  top: 10px;
+}
+
+.footer_name::before {
+  content: '';
+  position: absolute;
+  color: var(--accent-color, #FF0070);
+  border-width: 0px 0px 1px 1px;
+  border-style: solid;
+  height: 25px;
+  width: 25px;
+  bottom: 0px;
+  left: 0px;
+}
+
+
+
+
+
+
+

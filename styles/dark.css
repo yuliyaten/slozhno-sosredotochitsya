@@ -4,9 +4,87 @@
   переключая тему
 */
 
+:root.theme_dark {
+  --accent-color: #ff0070;
+  --text-color: #f1b2ce;
+  --standard-color: #000028;
+  --main-font: "IBM Plex mono";
+  --main-font-size: 18px;
+  --header-footer-color: #db00ff;
+  --header-footer-font-size: 116px;
+  --header-footer-font-style: normal;
+  --header-footer-line-height: 82.5%;
+}
+
 .page.theme_dark {
-  /* сохраните этот селектор в приведённом виде.
-    Так стили написанные ниже будут иметь больший вес,
-    чем стили в медиазапросе предпочтений пользователя
-  */
+  background-image: url(../images/cover-image-dark.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  --accent-color: #ff0070;
+  --text-color: #f1b2ce;
+  --standard-color: #000028;
+  --main-font: "IBM Plex mono";
+  --main-font-size: 18px;
+  --header-footer-color: #db00ff;
+  --header-footer-font-size: 116px;
+  --header-footer-font-style: normal;
+  --header-footer-line-height: 82.5%;
+
+}
+
+.page.theme_auto {
+  background-image: url(../images/cover-image-dark.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  --accent-color: #ff0070;
+  --text-color: #f1b2ce;
+  --standard-color: #000028;
+  --main-font: "IBM Plex mono";
+  --main-font-size: 18px;
+  --header-footer-color: #db00ff;
+  --header-footer-font-size: 116px;
+  --header-footer-font-style: normal;
+  --header-footer-line-height: 82.5%;
+}
+
+.theme_dark .corner-border::after {
+  color: var(--accent-color, #ff0070);
+}
+
+.theme_dark .corner-border::before {
+  color: var(--accent-color, #ff0070);
+}
+
+.theme_dark .header__theme-menu-list {
+  color: var(--accent-color, #ff0070);
+}
+
+.theme_dark .section_heading {
+  color: var(--accent-color, #ff0070);
+}
+
+.theme_dark .footer_name::after {
+  color: var(--accent-color, #ff0070);
+}
+
+.theme_dark .footer_name::before {
+  color: var(--accent-color, #ff0070);
+}
+
+.theme_dark .header__theme-menu-button:hover {
+  outline: 1px solid rgba(255, 0, 112, 0.4);
+}
+
+.theme_dark a:focus-visible {
+  outline: 1px solid #f1b2ce;
+  text-align: center;
+}
+
+.theme_dark .multitask_link:hover {
+  text-decoration: underline;
+  color: #f1b2ce;
 }

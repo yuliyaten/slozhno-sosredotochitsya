@@ -16,7 +16,8 @@
   background-size: cover;
   background-attachment: fixed;
   display: grid;
-  padding: 10px;
+  padding: 0px;
+  margin: 0px;
 }
 
 .header {
@@ -25,6 +26,7 @@
   display: grid;
   grid-template-rows: 1fr min-content 1fr;
   margin-block-end: 40px;
+  padding: 10px 10px 0px 10px;
 }
 
 .header_decorated-item {
@@ -34,7 +36,8 @@
   gap: 10px;
   color: var(--accent-color, #FF0070);
   height: 26px;
-  right: 10px;
+  right: 19px;
+  top: 10px;
 }
 
 .header_decorated-item::after {
@@ -101,7 +104,8 @@
   border-style: solid;
   height: 25px;
   width: 25px;
-  right: 0px;
+  right: 10px;
+  top: 10px;
 }
 
 .corner-border::before { 
@@ -113,6 +117,7 @@
   height: 25px;
   width: 25px;
   bottom: 0px;
+  left: 10px;
 }
 
 .decorated_name {
@@ -141,6 +146,7 @@
 .content {
   display: grid;
   gap: 50px;
+  padding: 0 10px 0px 10px;
 }
 
 section {
@@ -223,6 +229,8 @@ a:hover {
   text-shadow: 2px 2px 0 var(--accent-color, #FF0070);
   height: 100vh;
   margin-block-start: 40px;
+  min-height: 668px;
+  padding: 0px 10px 0px 10px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -237,7 +245,7 @@ a:hover {
   border-style: solid;
   height: 25px;
   width: 25px;
-  right: 0px;
+  right: 10px;
   top: 10px;
 }
 
@@ -249,6 +257,6 @@ a:hover {
   border-style: solid;
   height: 25px;
   width: 25px;
-  bottom: 0px;
-  left: 0px;
+  bottom: 10px;
+  left: 10px;
 }

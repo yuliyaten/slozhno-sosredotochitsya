@@ -1,9 +1,6 @@
 /*mediaquerie for 768px*/
 
 @media (min-width: 768px) {
-  .page {
-    padding: 20px;
-  }
 
   .decorated_name-pad {
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
@@ -17,10 +14,27 @@
 
   .header {
     margin-block-end: 60px;
+    padding: 20px 20px 0px 20px;
+  }
+
+  .header_decorated-item {
+    top: 20px;
+    right: 29px;
+  }
+
+  .corner-border::after {
+    right: 20px;
+    top: 20px;
+  }
+
+  .corner-border::before {
+    bottom: 20px;
+    left: 20px;
   }
 
   .content {
     gap: 80px;
+    padding: 0px 20px 0px 20px;
   }
 
   section {
@@ -102,6 +116,18 @@
 
   .footer {
     margin-block-start: 60px;
+    padding: 0px 20px 0px 20px;
+
+  }
+
+  .footer_name::after {
+    right: 20px;
+    top: 20px;
+  }
+
+  .footer_name::before {
+    bottom: 20px;
+    left: 20px;
   }
 }
 

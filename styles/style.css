@@ -96,7 +96,7 @@
   text-decoration: underline;
 }
 
-.corner-border::after { 
+.corner-border::after {
   content: '';
   position: absolute;
   color: var(--accent-color, #FF0070);
@@ -108,7 +108,7 @@
   top: 10px;
 }
 
-.corner-border::before { 
+.corner-border::before {
   content: '';
   position: absolute;
   color: var(--accent-color, #FF0070);

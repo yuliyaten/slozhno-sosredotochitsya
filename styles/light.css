@@ -90,3 +90,7 @@
 .theme_light .header__theme-menu-button:focus-visible {
   color: var(--standard-color);
 }
+
+.theme_light .footer {
+  background-color: var(--background-color);
+}

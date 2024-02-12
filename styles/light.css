@@ -5,13 +5,15 @@
 */
 
 :root.theme_light {
-  background-image: url(../images/cover-image-light.png);
+  --background-image: url(../images/cover-image-light.png);
   --accent-color: #ff8dcb;
   --text-color: #353430;
   --standard-color: #353430;
+  --section-color: #353430;
   --background-color:#fff1f7;
   --main-font: "IBM Plex mono";
   --main-font-size: 18px;
+  --hover-opacity: #32312D66;
   --header-footer-color: #ffc2e6;
   --header-footer-font-size: 116px;
   --header-footer-font-style: normal;
@@ -21,29 +23,36 @@
 
 @media (prefers-color-scheme: light) {
   :root {
-    background-image: url(../images/cover-image-light.png);
+    --background-image: url(../images/cover-image-light.png);
     --accent-color: #ff8dcb;
+    --section-color: #353430;
     --text-color: #353430;
     --standard-color: #353430;
     --background-color:#fff1f7;
     --main-font: "IBM Plex mono";
     --main-font-size: 18px;
+    --hover-opacity: #32312D66;
     --header-footer-color: #ffc2e6;
     --header-footer-font-size: 116px;
     --header-footer-font-style: normal;
     --header-footer-line-height: 82.5%;
     --corner-color: #353430;
   }
+  .header_decorated-item {
+    display: none;
+  }
 }
 
 .page.theme_light {
-  background-image: url(../images/cover-image-light.png);
+  --background-image: url(../images/cover-image-light.png);
   --accent-color: #ff8dcb;
   --text-color: #353430;
+  --section-color: #353430;
   --standard-color: #353430;
   --background-color:#fff1f7;
   --main-font: "IBM Plex mono";
   --main-font-size: 18px;
+  --hover-opacity: #32312D66;
   --header-footer-color: #ffc2e6;
   --header-footer-font-size: 116px;
   --header-footer-font-style: normal;
@@ -59,20 +68,8 @@
   color: var(--standard-color, #353430);
 }
 
-.theme_light .header__theme-menu-list {
-  color: var(--text-color, #353430);
-}
-
 .theme_light .header_decorated-item {
   display: none;
-}
-
-.theme_light .section_heading {
-  color: var(--text-color, #353430);
-}
-
-.theme_light .content_text {
-  color: var(--text-color, #353430);
 }
 
 .theme_light .footer_name::after {
@@ -83,14 +80,6 @@
   color: var(--standard-color, #353430);
 }
 
-.theme_light .header__theme-menu-button:hover {
-  outline: 1px solid rgba(50, 49, 45, 0.4);
-}
-
 .theme_light .header__theme-menu-button:focus-visible {
   color: var(--standard-color);
-}
-
-.theme_light .footer {
-  background-color: var(--background-color);
 }

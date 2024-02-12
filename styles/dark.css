@@ -7,10 +7,12 @@
 :root.theme_dark {
   --accent-color: #ff0070;
   --text-color: #f1b2ce;
+  --section-color: #FF0070;
   --standard-color: #000028;
   --main-font: "IBM Plex mono";
   --main-font-size: 18px;
   --corner-color: #ff0070;
+  --hover-opacity: #FF007066;
   --header-footer-color: #db00ff;
   --header-footer-font-size: 116px;
   --header-footer-font-style: normal;
@@ -20,14 +22,26 @@
 .page.theme_dark {
   background-image: url(../images/cover-image-dark.png);
   --accent-color: #ff0070;
+  --section-color: #FF0070;
   --text-color: #f1b2ce;
   --standard-color: #000028;
   --main-font: "IBM Plex mono";
   --main-font-size: 18px;
   --corner-color: #ff0070;
+  --hover-opacity: #FF007066;
   --header-footer-color: #db00ff;
   --header-footer-font-size: 116px;
   --header-footer-font-style: normal;
   --header-footer-line-height: 82.5%;
 }
 
+.theme_dark .header_decorated-item {
+  display: block;
+  position: absolute;
+  position: absolute;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--accent-color);
+}

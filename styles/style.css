@@ -10,7 +10,7 @@
   font-family: var(--main-font, monospace);
   background-color: var(--background-color);
   color: var(--accent-color);
-  background-image: url(../images/cover-image-dark.png);
+  background-image: var(--background-image);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -84,6 +84,7 @@ button {
   padding: 0px 13px;
   justify-content: center;
   align-items: center;
+  color: var(--section-color);
 }
 
 .header__theme-menu-item {
@@ -96,7 +97,7 @@ button {
   justify-content: center;
   align-items: center;
   gap: 10px;
-  outline: 1px solid #FF007066;
+  outline: 1px solid var(--hover-opacity);
 }
 
 .header__theme-menu-button:active {
@@ -221,7 +222,7 @@ a:hover {
 }
 
 .section_heading {
-  color: var(--accent-color);
+  color: var(--section-color);
   font-size: 18px;
   font-style: normal;
   font-weight: 700;

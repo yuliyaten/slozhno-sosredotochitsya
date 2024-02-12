@@ -36,10 +36,9 @@
 }
 
 .theme_dark .header_decorated-item {
-  display: block;
+  display: flex;
   position: absolute;
   text-transform: uppercase;
-  display: flex;
   align-items: center;
   gap: 10px;
   color: var(--accent-color);

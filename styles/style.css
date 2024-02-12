@@ -8,7 +8,7 @@
 .page {
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
   font-family: var(--main-font, monospace);
-  background-color: var(--standard-color);
+  background-color: var(--background-color);
   color: var(--accent-color);
   background-image: url(../images/cover-image-dark.png);
   background-position: center;

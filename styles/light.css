@@ -14,6 +14,7 @@
   --header-footer-font-size: 116px;
   --header-footer-font-style: normal;
   --header-footer-line-height: 82.5%;
+  --corner-color: #353430;
 }
 
 @media (prefers-color-scheme: light) {
@@ -27,32 +28,12 @@
     --header-footer-font-size: 116px;
     --header-footer-font-style: normal;
     --header-footer-line-height: 82.5%;
+    --corner-color: #353430;
   }
-}
-
-.page.theme_auto {
-  background-image: url(../images/cover-image-light.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  --accent-color: #ff8dcb;
-  --text-color: #353430;
-  --standard-color: #353430;
-  --main-font: "IBM Plex mono";
-  --main-font-size: 18px;
-  --header-footer-color: #ffc2e6;
-  --header-footer-font-size: 116px;
-  --header-footer-font-style: normal;
-  --header-footer-line-height: 82.5%;
 }
 
 .page.theme_light {
   background-image: url(../images/cover-image-light.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
   --accent-color: #ff8dcb;
   --text-color: #353430;
   --standard-color: #353430;
@@ -62,25 +43,18 @@
   --header-footer-font-size: 116px;
   --header-footer-font-style: normal;
   --header-footer-line-height: 82.5%;
+  --corner-color: #353430;
   /* сохраните этот селектор в приведённом виде.
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя
   */
 }
 
-.page.theme_auto .header_decorated-item {
-  display: none;
-}
-
-.corner-border::after {
+.theme_light .corner-border::before {
   color: var(--standard-color, #353430);
 }
 
-.corner-border::before {
-  color: var(--standard-color, #353430);
-}
-
-.header__theme-menu-list {
+.theme_light .header__theme-menu-list {
   color: var(--text-color, #353430);
 }
 
@@ -88,37 +62,26 @@
   display: none;
 }
 
-.section_heading {
+.theme_light .section_heading {
   color: var(--text-color, #353430);
 }
 
-.content_text {
+.theme_light .content_text {
   color: var(--text-color, #353430);
 }
 
-.footer_name::after {
+.theme_light .footer_name::after {
   color: var(--standard-color, #353430);
 }
 
-.footer_name::before {
+.theme_light .footer_name::before {
   color: var(--standard-color, #353430);
 }
 
-.header__theme-menu-button:hover {
+.theme_light .header__theme-menu-button:hover {
   outline: 1px solid rgba(50, 49, 45, 0.4);
 }
 
-.header__theme-menu-button:focus-visible {
-  outline: none;
-  text-decoration: underline;
-}
-
-a:focus-visible {
-  outline: 1px solid #353430;
-  text-align: center;
-}
-
-a:hover {
-  text-decoration: underline;
-  color: var(--standard-color, #353430);
+.theme_light .header__theme-menu-button:focus-visible {
+  color: var(--standard-color);
 }

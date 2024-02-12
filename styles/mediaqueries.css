@@ -58,7 +58,6 @@
 
   .decorated_name {
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
-    font-size: 120px;
   }
 
   .pictures {
@@ -151,7 +150,6 @@
 
   .decorated_name {
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
-    font-size: 157px;
   }
 
   .what_section {

@@ -1,6 +1,5 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
-
 * {
   box-sizing: border-box;
 }
@@ -16,8 +15,8 @@
   background-size: cover;
   background-attachment: fixed;
   display: grid;
-  padding: 0px;
-  margin: 0px;
+  justify-content: center;
+  align-items: center;
 }
 
 .header {
@@ -33,9 +32,9 @@
 }
 
 .header_decorated-item {
+  display: flex;
   position: absolute;
   text-transform: uppercase;
-  display: flex;
   align-items: center;
   gap: 10px;
   color: var(--accent-color);
@@ -44,7 +43,7 @@
 }
 
 .header_decorated-item::after {
-  content: '';
+  content: "";
   width: 9px;
   height: 9px;
   border-radius: 50%;
@@ -88,7 +87,7 @@ button {
 }
 
 .header__theme-menu-item {
- justify-content: center;
+  justify-content: center;
 }
 
 .header__theme-menu-button:hover {
@@ -101,7 +100,7 @@ button {
 }
 
 .header__theme-menu-button:active {
-  outline: 1px solid var(--accent-color);
+  outline: 1px solid var(--section-color);
 }
 
 .header__theme-menu-button:focus-visible {
@@ -110,7 +109,7 @@ button {
 }
 
 .decorated-zone::after {
-  content: '';
+  content: "";
   position: absolute;
   color: var(--corner-color);
   border-width: 1px 1px 0px 0px;
@@ -122,7 +121,7 @@ button {
 }
 
 .decorated-zone::before {
-  content: '';
+  content: "";
   position: absolute;
   color: var(--corner-color);
   border-width: 0px 0px 1px 1px;
@@ -195,7 +194,7 @@ section {
 }
 
 .content_text {
-  color: var(--text-color) ;
+  color: var(--text-color);
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -209,16 +208,18 @@ a {
 }
 
 a:focus {
-  outline: 1px solid var( --text-color);
+  outline: 1px solid var(--text-color);
   text-align: center;
 }
 
 a:hover {
-  border-bottom: 2px solid var(--text-color);
+  border-bottom: 1px solid var(--text-color);
 }
 
 .header__theme-menu-button_active {
   pointer-events: none;
+  outline: 1px solid var(--section-color);
+  text-align: center;
 }
 
 .section_heading {
@@ -259,5 +260,5 @@ a:hover {
 }
 
 .footer_name {
-  font-size: 116px;
+  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
 }

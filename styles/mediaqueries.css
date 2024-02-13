@@ -1,7 +1,6 @@
 /*mediaquerie for 768px*/
 
 @media (min-width: 768px) {
-
   .decorated_name-pad {
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
     margin-left: -20px;
@@ -128,13 +127,11 @@
   .footer_name {
     font-size: 120px;
   }
-
 }
 
 /*mediaquerie for 1024px*/
 
 @media (min-width: 1024px) {
-
   .header__theme-menu {
     display: flex;
     justify-content: center;
@@ -179,9 +176,10 @@
   }
 
   .content_box-desktop {
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-auto-flow: dense;
     justify-content: space-between;
+    grid-template-columns: repeat(3, 1fr);
   }
 
   .content_definition-desktop {
